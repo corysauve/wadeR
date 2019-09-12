@@ -1,0 +1,11 @@
+Package: wadeR
+Type: Package
+Title: Analyze aquatic data
+Version: 0.1.0
+Authors@R: person("Cory", "Sauve", email = "csauve@iu.edu",
+                  role = c("aut", "cre"))
+Maintainer: Cory Sauve <csauve@iu.edu>
+Description: Contains various functions for aquatic analysis 
+License: 
+Encoding: UTF-8
+LazyData: true
