@@ -10,9 +10,20 @@
 #' one_percent_light(depths, light)
 
 one_percent_light <- function(depths, light){
+
+  # Determine surface and one percent light
   surfaceLight <- light[[1]]
   onePercent <- surfaceLight * 0.01
-  mod <- lm(depths ~ log(light))
+
+  # Remove zeros and determine length
+  light1 <- light[!light %in% 0]
+  len <- length(light1)
+
+  # Make depth vector sample length
+  depths1 <- depths[1:len]
+
+  # Calculate one percent light level
+  mod <- lm(depths1 ~ log(light1))
   coef <- coef(mod)
   int <- coef[1]
   slope <- coef[2]
