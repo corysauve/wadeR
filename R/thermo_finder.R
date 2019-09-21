@@ -2,8 +2,9 @@
 #'
 #' Determines the depth of the thermocline in a water column from a temperature profile
 #' This function was borrowed heavily from the rLakeAnalyzer package on CRAN.
-#' @param temps Vector of water temperature in degrees Celsius
+#'
 #' @param depths Vector of depths corresponding to the temps values
+#' @param temps Vector of water temperature in degrees Celsius
 #' @param Smin Optional parameter defining minimum density gradient for thermocline; defaults to 0.1
 #' @param seasonal Logical value indicating if seasonal thermocline should be returned.
 #' The seasonal thermocline is defined as the deepest density gradient found in the profile.
@@ -18,7 +19,7 @@
 #'
 #' thermo_finder(temps, depths)
 
-thermo_finder <- function(temps, depths, Smin = 0.1, seasonal = TRUE, index = FALSE, mixed_cutoff = 1){
+thermo_finder <- function(depths, temps, Smin = 0.1, seasonal = TRUE, index = FALSE, mixed_cutoff = 1){
 
   # Missing value catcher
   if(any(is.na(temps))){
