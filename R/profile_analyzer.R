@@ -32,7 +32,7 @@ profile_analyzer <- function(parameter){
   summaryValue <- c(profileDepth, parameterMean, parameterMedian, parameterMin, parameterMax)
 
   # Creating summary df
-  summaryTable <- data.table(summaryVariable, summaryValue)
+  summaryTable <- data.table::data.table(summaryVariable, summaryValue)
 
   return(summaryTable)
 }
