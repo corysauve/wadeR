@@ -1,11 +1,19 @@
 Package: wadeR
 Type: Package
-Title: Analyze aquatic data
+Title: Analyze aquatic data with wadeR
 Version: 0.1.0
 Authors@R: person("Cory", "Sauve", email = "csauve@iu.edu",
                   role = c("aut", "cre"))
 Maintainer: Cory Sauve <csauve@iu.edu>
-Description: Contains various functions for aquatic analysis 
+Description: wadeR contains a variety of methods used in limnology and stream ecology.
 License: 
 Encoding: UTF-8
 LazyData: true
+Imports: 
+  magrittr,
+  data.table
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
