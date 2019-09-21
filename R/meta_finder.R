@@ -3,8 +3,8 @@
 #' Determines the upper and lower bounds of the metalimnion in a water column from a temperature profile of a stratified lake.
 #' This function was borrowed heavily from the rLakeAnalyzer package on CRAN.
 #'
-#' @param temps Vector of water temperature in degrees Celsius
 #' @param depths Vector of depths corresponding to the temps values
+#' @param temps Vector of water temperature in degrees Celsius
 #' @param slope
 #' @param seasonal Logical value indicating if seasonal thermocline should be returned.
 #' The seasonal thermocline is defined as the deepest density gradient found in the profile.
@@ -19,7 +19,7 @@
 #' metalimnion_finder(temps, depths)
 
 
-metalimnion_finder <- function(temps, depths, slope = 0.1, seasonal = TRUE, mixed_cutoff = 1){
+meta_finder <- function(depths, temps, slope = 0.1, seasonal = TRUE, mixed_cutoff = 1){
 
   if(any(is.na(temps))){
     return(rep(NaN, 2))
