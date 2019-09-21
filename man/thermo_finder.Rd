@@ -4,13 +4,13 @@
 \alias{thermo_finder}
 \title{Thermocline finder}
 \usage{
-thermo_finder(temps, depths, Smin = 0.1, seasonal = TRUE,
+thermo_finder(depths, temps, Smin = 0.1, seasonal = TRUE,
   index = FALSE, mixed_cutoff = 1)
 }
 \arguments{
-\item{temps}{Vector of water temperature in degrees Celsius}
-
 \item{depths}{Vector of depths corresponding to the temps values}
+
+\item{temps}{Vector of water temperature in degrees Celsius}
 
 \item{Smin}{Optional parameter defining minimum density gradient for thermocline; defaults to 0.1}
 
