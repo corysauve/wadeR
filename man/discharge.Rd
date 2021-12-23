@@ -2,10 +2,20 @@
 % Please edit documentation in R/discharge.R
 \name{discharge}
 \alias{discharge}
-\title{Stream discharge}
+\title{Calculate stream discharge}
 \usage{
 discharge(widths, depths, vel)
 }
+\arguments{
+\item{widths}{Transect measurement points}
+
+\item{depths}{Depth measurements}
+
+\item{velocity}{Velocity measurements}
+}
+\value{
+a numeric
+}
 \description{
-Stream discharge
+Calculate stream discharge
 }

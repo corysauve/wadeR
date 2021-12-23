@@ -4,8 +4,13 @@
 \alias{cpue}
 \title{Catch-per-unit-effort}
 \usage{
-cpue(spp, catch, effort)
+cpue(catch, effort)
+}
+\arguments{
+\item{catch}{Collected individuals}
+
+\item{effort}{Duration of collection}
 }
 \description{
-Calculates
+Catch-per-unit-effort
 }

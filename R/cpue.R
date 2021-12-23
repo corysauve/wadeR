@@ -1,15 +1,10 @@
 #' Catch-per-unit-effort
 #'
-#' Calculates
+#' @param catch Collected individuals
+#' @param effort Duration of collection
+#' @export
 
-cpue <- function(spp, catch, effort){
+cpue <- function(catch, effort){
 
-  catch_data <- data.table::data.table(spp, catch, effort)
-
-  catch_data$cpue <- catch_data$catch / catch_data$effort
-
-  cpue_table <- data.table::data.table(catch_data$spp, catch_data$cpue)
-
-  return(cpue_table)
-
+  catch / effort
 }

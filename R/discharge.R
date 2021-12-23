@@ -1,12 +1,12 @@
-#' Stream discharge
+#' Calculate stream discharge
 #'
-#'
-#'
+#' @param widths Transect measurement points
+#' @param depths Depth measurements
+#' @param velocity Velocity measurements
+#' @return a numeric
+#' @export
 
 discharge <- function(widths, depths, vel){
 
-    q_m_seg <- widths * depths * vel
-    Q_m3s <- sum(q_m_seg)
-    return(Q_m3s)
-
+    sum(widths * depths * vel)
 }

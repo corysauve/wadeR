@@ -2,24 +2,22 @@
 % Please edit documentation in R/zoo_nul.R
 \name{zoo_nul}
 \alias{zoo_nul}
-\title{Zooplankton NU  per liter}
+\title{Calculate zooplankton concentration from tow-net sampled}
 \usage{
-zoo_nul(df, towLen, sampleVol, netDia = 12.5)
+zoo_nul(count, tow_length, sample_vol, new_dia = 12.5)
 }
 \arguments{
-\item{df}{Dataframe containing genus and totalCount of each genus}
+\item{count}{Number of individuals counted}
 
-\item{towLen}{Length in meters of zooplankton net tow at time of sampling}
+\item{tow_length}{Length of tow in meters}
 
-\item{sampleVol}{Volume in mL of sample at time of identification}
+\item{sample_vol}{Sample volume in mL}
 
-\item{netDia}{Diameter in cm of zooplankton net opening; defaults to 12.5}
+\item{new_dia}{Tow net diameter; defaults to 12.5}
+}
+\value{
+A double
 }
 \description{
-Calculates the natural units per liter of zooplankton from a sample
+Calculate zooplankton concentration from tow-net sampled
 }
-\examples{
-
-zoo_nul(planktonCounts, towlength, sampleVol, netDia)
-}
-\keyword{zooplankton}
