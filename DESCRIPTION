@@ -1,20 +1,21 @@
 Package: wadeR
 Type: Package
-Title: Analyze aquatic data with wadeR
+Title: Common calculations for aquatic ecology
 Version: 0.1.0
-Authors@R: person("Cory", "Sauve", email = "csauve@iu.edu",
+Authors@R: person("Cory", "Sauve", email = "coryjsauve@gmail.com.edu",
                   role = c("aut", "cre"))
 Maintainer: Cory Sauve <csauve@iu.edu>
 Description: wadeR contains a variety of methods used in limnology and stream ecology.
-License: 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-  magrittr,
-  data.table
+    ggplot2,
+    magrittr
 Suggests: 
     knitr,
     rmarkdown,
-    testthat
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.2
+Config/testthat/edition: 3
