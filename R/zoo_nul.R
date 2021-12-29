@@ -10,10 +10,10 @@
 zoo_nul <- function(count, tow_length, sample_vol, new_dia = 12.5){
 
   # Calculate tow volume
-  tow_length <- (((new_dia / 2) * (1 / 100)) ^2) * pi * tow_length * 1000
+  tow_volume <- (((new_dia / 2) * (1 / 100)) ^2) * pi * tow_length * 1000
 
   # Determine multiplication factor (translating from scope to water)
-  sample_vol / tow_length
+  sample_vol / tow_volume
 
   multiFactor * count
 }
